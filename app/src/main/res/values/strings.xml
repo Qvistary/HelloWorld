@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">HelloWorld</string>
+    <string name="button">Button</string>
+    <string name="r_fg_tv">This is right fragment</string>
 </resources>
