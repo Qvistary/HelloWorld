@@ -3,14 +3,13 @@ package top.qvisa.android.helloworld;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.app.FragmentTransitionImpl;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import top.qvisa.android.helloworld.Fragment.AnotherRightFragment;
-import top.qvisa.android.helloworld.Fragment.RightFragment;
+import top.qvisa.android.helloworld.Fragment_package.AnotherRightFragment;
+import top.qvisa.android.helloworld.Fragment_package.RightFragment;
 
 public class FragmentTest extends AppCompatActivity implements View.OnClickListener {
     private Button mButton;
