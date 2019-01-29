@@ -40,6 +40,7 @@ public class FragmentTest extends AppCompatActivity implements View.OnClickListe
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.right_layout, fragment);
+        transaction.addToBackStack(null);
         transaction.commit();
     }
 
