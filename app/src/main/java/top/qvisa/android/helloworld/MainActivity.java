@@ -8,28 +8,34 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button mbfragment;
+    private Button mbfdemo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mbfragment=findViewById(R.id.Bt_Fragment);
-
+        mbfragment = findViewById(R.id.Bt_Fragment);
+        mbfdemo = findViewById(R.id.Bt_Fragment_demo);
         setOnclickListener();
     }
 
     @Override
     public void onClick(View v) {
-       Intent intent = null;
+        Intent intent = null;
         switch (v.getId()) {
             case R.id.Bt_Fragment:
-                intent = new Intent(MainActivity.this,FragmentTest.class);
+                intent = new Intent(MainActivity.this, FragmentTest.class);
+                break;
+            case R.id.Bt_Fragment_demo:
+                intent = new Intent(MainActivity.this, FragmentBestPractice.class);
                 break;
 
         }
         startActivity(intent);
     }
 
-    public void setOnclickListener(){
+    public void setOnclickListener() {
         mbfragment.setOnClickListener(this);
+        mbfdemo.setOnClickListener(this);
     }
 }

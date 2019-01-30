@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.app.AlertController.RecycleListView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/news_title_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <fragment
+        android:id="@+id/news_title_fragment"
+        android:name="top.qvisa.android.helloworld.FragmentBestPractice_package.NewsTitleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>
 
 
-</android.support.v7.app.AlertController.RecycleListView>
+
