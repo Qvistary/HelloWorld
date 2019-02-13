@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="top.qvisa.android.helloworld">
 
+    <uses-permission android:name="android.permission.BATTERY_STATS"
+        tools:ignore="ProtectedPermissions" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,7 +21,8 @@
         </activity>
         <activity android:name=".FragmentTest" />
         <activity android:name=".FragmentBestPractice" />
-        <activity android:name=".FragmentBestPractice_package.NewsContentActivity"></activity>
+        <activity android:name=".FragmentBestPractice_package.NewsContentActivity" />
+        <activity android:name=".BroadcastReceiver_package.BatteryLevelReceiverTest"></activity>
     </application>
 
 </manifest>

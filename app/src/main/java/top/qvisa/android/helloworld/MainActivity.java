@@ -6,9 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import top.qvisa.android.helloworld.BroadcastReceiver_package.BatteryLevelReceiverTest;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button mbfragment;
     private Button mbfdemo;
+    private Button mBatterydemo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         mbfragment = findViewById(R.id.Bt_Fragment);
         mbfdemo = findViewById(R.id.Bt_Fragment_demo);
+        mBatterydemo = findViewById(R.id.Bt_Battery_demo);
         setOnclickListener();
     }
 
@@ -29,6 +33,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.Bt_Fragment_demo:
                 intent = new Intent(MainActivity.this, FragmentBestPractice.class);
                 break;
+            case R.id.Bt_Battery_demo:
+                intent = new Intent(MainActivity.this, BatteryLevelReceiverTest.class);
+                break;
 
         }
         startActivity(intent);
@@ -37,5 +44,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void setOnclickListener() {
         mbfragment.setOnClickListener(this);
         mbfdemo.setOnClickListener(this);
+        mBatterydemo.setOnClickListener(this);
     }
 }
